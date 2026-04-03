@@ -676,9 +676,9 @@
   <section class="hero" id="top">
     <div class="hero-eyebrow">✦ 無料ツール</div>
     <h1>URLを入れるだけで<br><em>AIに読まれやすい</em>Markdownへ</h1>
-    <p>HTMLのままAIに渡すと、ナビやスクリプトのノイズで<strong>本文が埋もれます</strong>。Markdownに変換することで、見出し・本文・階層構造だけを抽出し、AIが正確に読み取れる形にします。</p>
-    <p style="font-size:13px;color:var(--gray-600);margin-top:6px;">ブログ運営者・SEO担当者・AI流入を意識しているWeb担当者向け</p>
-    <p class="hero-note">Wix・STUDIOなどのSPAは非対応 / WordPress等の静的サイト向け</p>
+    <p>HTMLのままAIに渡すと、ノイズで本文が埋もれます。MarkdownにすることでAIが正確に読み取れる形に変換します。</p>
+    <<p style="font-size:13px;color:var(--gray-600);margin-top:6px;">ブログ運営者・SEO担当者・AI流入を意識しているWeb担当者向け</p>
+    <p class="hero-note">Wix・STUDIOなどのSPAは非対応 / WordPress等の静的サイト推奨</p>
   </section>
 
   <!-- TOOL -->
@@ -754,7 +754,7 @@
         <div class="step-card">
           <div class="step-num">3</div>
           <h3>コピー or DL</h3>
-          <p>そのままコピーしてChatGPTなどに貼り付けるか、.mdファイルとして保存できます。</p>
+          <p>.mdファイルとして保存できます。</p>
         </div>
       </div>
     </div>
@@ -763,8 +763,8 @@
   <!-- IMPLEMENTATION -->
   <section id="impl" style="padding: 0 0 64px;">
     <div class="content-wrap">
-      <p class="section-title">llms.txt への活用</p>
-      <p class="section-subtitle">生成したMarkdownをAIエージェント向けに公開する場合の配置方法。</p>
+      <p class="section-title">活用例</p>
+      <p class="section-subtitle">WebページをMarkdown化しサーバーに設置することで、AIクローラーがHTMLより少ないトークンでコンテンツを正確に読み取れるようになります。</p>
       <div class="impl-section">
         <div class="impl-header">
           <h2>llms.txt ファイルの設置方法</h2>
@@ -781,8 +781,9 @@
           <div class="impl-step">
             <div class="impl-step-num">2</div>
             <div class="impl-step-content">
-              <h3>llms.txt として保存する</h3>
-              <p>「DLする」から .md ファイルをダウンロードし、ファイル名を <strong>llms.txt</strong> に変更します。</p>
+              <h3>ファイル名を変更して保存する</h3>
+              <p>「DLする」から .md ファイルをダウンロードし、ファイル名を <strong>index.md</strong> や <strong>about.md</strong>
+                など、対象ページに合わせた名前に変更します。</p>
             </div>
           </div>
           <div class="impl-step">
@@ -790,15 +791,14 @@
             <div class="impl-step-content">
               <h3>サーバーのルートに配置する</h3>
               <p>WordPressであれば <code>/public_html/</code> 直下。以下のURLでアクセスできる状態にします。</p>
-              <code>https://yourdomain.com/llms.txt</code>
+              <code>https://yourdomain.com/index.md</code>
             </div>
           </div>
           <div class="impl-step">
             <div class="impl-step-num">4</div>
             <div class="impl-step-content">
-              <h3>checker で確認する</h3>
-              <p>AI観測ラボの <a href="https://checker.ai-kansoku.com" style="color:var(--blue);">llms.txt チェッカー</a>
-                で正しく配置できているか確認しましょう。</p>
+              <h3>AIに読み取らせる</h3>
+              <p>設置したmdファイルのURLをChatGPTやClaudeに渡すか、AIクローラーが自動で読み取るのを待ちましょう。</p>
             </div>
           </div>
         </div>
