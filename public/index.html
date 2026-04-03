@@ -1025,7 +1025,8 @@ context: |
     function downloadMarkdown() {
       const slug = currentTitle.replace(/[^a-zA-Z0-9\u3040-\u9FFF]/g, '-').slice(0, 40);
       const filename = `${slug}.md`;
-      const blob = new Blob([currentMarkdown], { type: 'text/markdown;charset=utf-8' });
+      const bom = '\uFEFF';
+      const blob = new Blob([bom + currentMarkdown], { type: 'text/markdown;charset=utf-8' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       a.download = filename;
