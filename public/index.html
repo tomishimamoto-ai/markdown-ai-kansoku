@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://markdown.ai-kansoku.com" />
   <link rel="canonical" href="https://markdown.ai-kansoku.com" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='white'/><circle cx='16' cy='16' r='12' fill='none' stroke='%232563eb' stroke-width='0.9'/><circle cx='16' cy='16' r='7' fill='none' stroke='%232563eb' stroke-width='0.9'/><line x1='16' y1='3' x2='16' y2='11' stroke='%232563eb' stroke-width='0.9'/><line x1='16' y1='21' x2='16' y2='29' stroke='%232563eb' stroke-width='0.9'/><line x1='3' y1='16' x2='11' y2='16' stroke='%232563eb' stroke-width='0.9'/><line x1='21' y1='16' x2='29' y2='16' stroke='%232563eb' stroke-width='0.9'/><circle cx='16' cy='16' r='3' fill='%232563eb'/></svg>" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='white'/><circle cx='16' cy='16' r='12' fill='none' stroke='%232563eb' stroke-width='0.9'/><circle cx='16' cy='16' r='7' fill='none' stroke='%232563eb' stroke-width='0.9'/><line x1='16' y1='3' x2='16' y2='11' stroke='%232563eb' stroke-width='0.9'/><line x1='16' y1='21' x2='16' y2='29' stroke='%232563eb' stroke-width='0.9'/><line x1='3' y1='16' x2='11' y2='16' stroke='%232563eb' stroke-width='0.9'/><line x1='21' y1='16' x2='29' y2='16' stroke='%232563eb' stroke-width='0.9'/><circle cx='16' cy='16' r='3' fill='%232563eb'/></svg>" />
 
   <!-- Readability + Turndown -->
   <script src="https://cdn.jsdelivr.net/npm/@mozilla/readability@0.5.0/Readability.js"></script>
@@ -35,7 +37,13 @@
       --mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: var(--font);
@@ -58,6 +66,7 @@
       background: #fff;
       z-index: 100;
     }
+
     .nav-logo {
       display: flex;
       align-items: center;
@@ -67,6 +76,7 @@
       font-weight: 700;
       font-size: 15px;
     }
+
     .nav-logo-badge {
       background: var(--blue);
       color: #fff;
@@ -76,11 +86,13 @@
       border-radius: 100px;
       letter-spacing: 0.03em;
     }
+
     .nav-links {
       display: flex;
       align-items: center;
       gap: 4px;
     }
+
     .nav-links a {
       text-decoration: none;
       color: var(--gray-600);
@@ -89,13 +101,21 @@
       border-radius: 8px;
       transition: background 0.15s, color 0.15s;
     }
-    .nav-links a:hover { background: var(--gray-100); color: var(--gray-900); }
+
+    .nav-links a:hover {
+      background: var(--gray-100);
+      color: var(--gray-900);
+    }
+
     .nav-cta {
       background: var(--blue) !important;
       color: #fff !important;
       font-weight: 600 !important;
     }
-    .nav-cta:hover { background: var(--blue-dark) !important; }
+
+    .nav-cta:hover {
+      background: var(--blue-dark) !important;
+    }
 
     /* ===== HERO ===== */
     .hero {
@@ -104,6 +124,7 @@
       max-width: 720px;
       margin: 0 auto;
     }
+
     .hero-eyebrow {
       display: inline-flex;
       align-items: center;
@@ -117,6 +138,7 @@
       margin-bottom: 20px;
       letter-spacing: 0.05em;
     }
+
     .hero h1 {
       font-size: clamp(26px, 5vw, 38px);
       font-weight: 800;
@@ -125,16 +147,19 @@
       margin-bottom: 16px;
       color: var(--gray-900);
     }
+
     .hero h1 em {
       font-style: normal;
       color: var(--blue);
     }
+
     .hero p {
       color: var(--gray-600);
       font-size: 16px;
       max-width: 540px;
       margin: 0 auto 8px;
     }
+
     .hero-note {
       font-size: 12px;
       color: var(--gray-400);
@@ -147,17 +172,20 @@
       margin: 0 auto;
       padding: 0 24px 64px;
     }
+
     .input-card {
       border: 1.5px solid var(--gray-200);
       border-radius: var(--radius-lg);
       padding: 24px;
       background: #fff;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
     }
+
     .url-row {
       display: flex;
       gap: 10px;
     }
+
     .url-input {
       flex: 1;
       border: 1.5px solid var(--gray-200);
@@ -170,11 +198,16 @@
       transition: border-color 0.15s, box-shadow 0.15s;
       min-width: 0;
     }
-    .url-input::placeholder { color: var(--gray-400); }
+
+    .url-input::placeholder {
+      color: var(--gray-400);
+    }
+
     .url-input:focus {
       border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
     }
+
     .btn-convert {
       background: var(--blue);
       color: #fff;
@@ -188,16 +221,30 @@
       white-space: nowrap;
       transition: background 0.15s, transform 0.1s;
     }
-    .btn-convert:hover { background: var(--blue-dark); }
-    .btn-convert:active { transform: scale(0.98); }
-    .btn-convert:disabled { background: var(--gray-400); cursor: not-allowed; }
+
+    .btn-convert:hover {
+      background: var(--blue-dark);
+    }
+
+    .btn-convert:active {
+      transform: scale(0.98);
+    }
+
+    .btn-convert:disabled {
+      background: var(--gray-400);
+      cursor: not-allowed;
+    }
 
     /* ===== RESULT AREA ===== */
     .result-area {
       margin-top: 20px;
       display: none;
     }
-    .result-area.visible { display: block; }
+
+    .result-area.visible {
+      display: block;
+    }
+
     .result-toolbar {
       display: flex;
       align-items: center;
@@ -206,18 +253,22 @@
       flex-wrap: wrap;
       gap: 8px;
     }
+
     .result-meta {
       font-size: 13px;
       color: var(--gray-600);
     }
+
     .result-meta strong {
       color: var(--gray-900);
       font-weight: 600;
     }
+
     .btn-row {
       display: flex;
       gap: 8px;
     }
+
     .btn-secondary {
       border: 1.5px solid var(--gray-200);
       background: #fff;
@@ -230,7 +281,12 @@
       cursor: pointer;
       transition: background 0.15s, border-color 0.15s;
     }
-    .btn-secondary:hover { background: var(--gray-100); border-color: var(--gray-400); }
+
+    .btn-secondary:hover {
+      background: var(--gray-100);
+      border-color: var(--gray-400);
+    }
+
     .btn-dl {
       border: 1.5px solid var(--blue);
       background: var(--blue-light);
@@ -243,7 +299,11 @@
       cursor: pointer;
       transition: background 0.15s;
     }
-    .btn-dl:hover { background: var(--blue-mid); }
+
+    .btn-dl:hover {
+      background: var(--blue-mid);
+    }
+
     .markdown-preview {
       border: 1px solid var(--gray-200);
       border-radius: var(--radius);
@@ -259,6 +319,7 @@
       overflow-y: auto;
       resize: vertical;
     }
+
     .copy-toast {
       position: fixed;
       bottom: 32px;
@@ -275,6 +336,7 @@
       pointer-events: none;
       z-index: 999;
     }
+
     .copy-toast.show {
       opacity: 1;
       transform: translateX(-50%) translateY(0);
@@ -288,15 +350,23 @@
       font-size: 14px;
       display: none;
     }
-    .status-box.visible { display: flex; align-items: center; gap: 10px; }
+
+    .status-box.visible {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     .status-box.loading {
       background: var(--blue-light);
       color: var(--blue-dark);
     }
+
     .status-box.error {
       background: #FEF2F2;
       color: #991B1B;
     }
+
     .spinner {
       width: 18px;
       height: 18px;
@@ -306,7 +376,12 @@
       animation: spin 0.7s linear infinite;
       flex-shrink: 0;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     /* ===== HOW TO ===== */
     .section-title {
@@ -316,23 +391,27 @@
       color: var(--gray-900);
       margin-bottom: 6px;
     }
+
     .section-subtitle {
       font-size: 14px;
       color: var(--gray-600);
       margin-bottom: 32px;
     }
+
     .steps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 16px;
       margin-bottom: 56px;
     }
+
     .step-card {
       border: 1px solid var(--gray-200);
       border-radius: var(--radius-lg);
       padding: 20px;
       background: #fff;
     }
+
     .step-num {
       width: 32px;
       height: 32px;
@@ -346,8 +425,18 @@
       justify-content: center;
       margin-bottom: 14px;
     }
-    .step-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-    .step-card p { font-size: 13px; color: var(--gray-600); line-height: 1.6; }
+
+    .step-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .step-card p {
+      font-size: 13px;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
 
     /* ===== IMPLEMENTATION ===== */
     .impl-section {
@@ -356,21 +445,39 @@
       overflow: hidden;
       margin-bottom: 56px;
     }
+
     .impl-header {
       background: var(--gray-50);
       border-bottom: 1px solid var(--gray-200);
       padding: 16px 24px;
     }
-    .impl-header h2 { font-size: 16px; font-weight: 700; }
-    .impl-header p { font-size: 13px; color: var(--gray-600); margin-top: 4px; }
-    .impl-body { padding: 24px; }
+
+    .impl-header h2 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .impl-header p {
+      font-size: 13px;
+      color: var(--gray-600);
+      margin-top: 4px;
+    }
+
+    .impl-body {
+      padding: 24px;
+    }
+
     .impl-step {
       display: flex;
       gap: 16px;
       padding: 16px 0;
       border-bottom: 1px solid var(--gray-100);
     }
-    .impl-step:last-child { border-bottom: none; }
+
+    .impl-step:last-child {
+      border-bottom: none;
+    }
+
     .impl-step-num {
       flex-shrink: 0;
       width: 24px;
@@ -385,8 +492,19 @@
       justify-content: center;
       margin-top: 2px;
     }
-    .impl-step-content h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
-    .impl-step-content p { font-size: 13px; color: var(--gray-600); line-height: 1.6; }
+
+    .impl-step-content h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .impl-step-content p {
+      font-size: 13px;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
     .impl-step-content code {
       display: block;
       margin-top: 10px;
@@ -402,10 +520,14 @@
     }
 
     /* ===== FAQ ===== */
-    .faq-list { margin-bottom: 56px; }
+    .faq-list {
+      margin-bottom: 56px;
+    }
+
     .faq-item {
       border-bottom: 1px solid var(--gray-200);
     }
+
     .faq-q {
       width: 100%;
       background: none;
@@ -422,6 +544,7 @@
       align-items: center;
       gap: 16px;
     }
+
     .faq-q .chevron {
       flex-shrink: 0;
       width: 20px;
@@ -429,7 +552,11 @@
       color: var(--gray-400);
       transition: transform 0.2s;
     }
-    .faq-item.open .chevron { transform: rotate(180deg); }
+
+    .faq-item.open .chevron {
+      transform: rotate(180deg);
+    }
+
     .faq-a {
       font-size: 14px;
       color: var(--gray-600);
@@ -438,6 +565,7 @@
       overflow: hidden;
       transition: max-height 0.3s ease, padding 0.2s;
     }
+
     .faq-item.open .faq-a {
       max-height: 400px;
       padding-bottom: 20px;
@@ -451,17 +579,20 @@
       text-align: center;
       margin-bottom: 64px;
     }
+
     .cta-section h2 {
       font-size: 22px;
       font-weight: 800;
       color: #fff;
       margin-bottom: 10px;
     }
+
     .cta-section p {
-      color: rgba(255,255,255,0.8);
+      color: rgba(255, 255, 255, 0.8);
       font-size: 14px;
       margin-bottom: 24px;
     }
+
     .btn-cta-white {
       background: #fff;
       color: var(--blue);
@@ -476,7 +607,10 @@
       display: inline-block;
       transition: opacity 0.15s;
     }
-    .btn-cta-white:hover { opacity: 0.9; }
+
+    .btn-cta-white:hover {
+      opacity: 0.9;
+    }
 
     /* ===== FOOTER ===== */
     footer {
@@ -486,8 +620,15 @@
       color: var(--gray-400);
       font-size: 13px;
     }
-    footer a { color: var(--gray-400); text-decoration: none; }
-    footer a:hover { color: var(--gray-700); }
+
+    footer a {
+      color: var(--gray-400);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--gray-700);
+    }
 
     /* ===== SECTION ANCHORS ===== */
     .content-wrap {
@@ -497,342 +638,410 @@
     }
 
     @media (max-width: 600px) {
-      .url-row { flex-direction: column; }
-      .btn-convert { width: 100%; }
-      nav { padding: 0 16px; }
-      .nav-links a:not(.nav-cta) { display: none; }
+      .url-row {
+        flex-direction: column;
+      }
+
+      .btn-convert {
+        width: 100%;
+      }
+
+      nav {
+        padding: 0 16px;
+      }
+
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="https://ai-kansoku.com" class="nav-logo">
-    <span class="nav-logo-badge">AI</span>
-    <span>AI観測ラボ</span>
-  </a>
-  <div class="nav-links">
-    <a href="#how">使い方</a>
-    <a href="#faq">FAQ</a>
-    <a href="https://ai-kansoku.com" class="nav-cta">無料で診断する →</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-eyebrow">✦ 無料ツール</div>
-  <h1>URLを入れるだけで<br><em>AIに読まれやすい</em>Markdownへ</h1>
-  <p>Webページをそのままコピペするより、Markdownに変換してからAIに渡すと精度が上がります。このツールはその変換を自動化します。</p>
-  <p class="hero-note">Wix・STUDIOなどのSPAは非対応 / WordPress等の静的サイト向け</p>
-</section>
-
-<!-- TOOL -->
-<section class="tool-section" id="tool">
-  <div class="input-card">
-    <div class="url-row">
-      <input
-        type="url"
-        class="url-input"
-        id="urlInput"
-        placeholder="https://example.com/your-page"
-        autocomplete="off"
-        spellcheck="false"
-      />
-      <button class="btn-convert" id="convertBtn" onclick="handleConvert()">変換する</button>
+  <!-- NAV -->
+  <nav>
+    <a href="https://ai-kansoku.com" class="nav-logo">
+      <span class="nav-logo-badge">AI</span>
+      <span>AI観測ラボ</span>
+    </a>
+    <div class="nav-links">
+      <a href="#how">使い方</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://ai-kansoku.com" class="nav-cta">無料で診断する →</a>
     </div>
+  </nav>
 
-    <!-- status -->
-    <div class="status-box loading" id="statusLoading">
-      <div class="spinner"></div>
-      <span>ページを取得してMarkdownに変換中…</span>
-    </div>
-    <div class="status-box error" id="statusError">
-      <span id="errorMsg">エラーが発生しました。</span>
-    </div>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-eyebrow">✦ 無料ツール</div>
+    <h1>URLを入れるだけで<br><em>AIに読まれやすい</em>Markdownへ</h1>
+    <p>HTMLのままAIに渡すと、ナビやスクリプトのノイズで<strong>本文が埋もれます</strong>。Markdownに変換することで、見出し・本文・階層構造だけを抽出し、AIが正確に読み取れる形にします。</p>
+    <p style="font-size:13px;color:var(--gray-600);margin-top:6px;">ブログ運営者・SEO担当者・AI流入を意識しているWeb担当者向け</p>
+    <p class="hero-note">Wix・STUDIOなどのSPAは非対応 / WordPress等の静的サイト向け</p>
+  </section>
 
-    <!-- result -->
-    <div class="result-area" id="resultArea">
-      <div class="result-toolbar">
-        <div class="result-meta">
-          <strong id="resultTitle">ページタイトル</strong>
-          <span style="margin:0 6px;color:#d1d5db;">|</span>
-          <span id="resultChars">0文字</span>
+  <!-- TOOL -->
+  <section class="tool-section" id="tool">
+    <div class="input-card">
+      <div class="url-row">
+        <input type="url" class="url-input" id="urlInput" placeholder="https://example.com/your-page" autocomplete="off"
+          spellcheck="false" />
+        <button class="btn-convert" id="convertBtn" onclick="handleConvert()">変換する</button>
+      </div>
+
+      <!-- status -->
+      <div class="status-box loading" id="statusLoading">
+        <div class="spinner"></div>
+        <span>ページを取得してMarkdownに変換中…</span>
+      </div>
+      <div class="status-box error" id="statusError">
+        <span id="errorMsg">エラーが発生しました。</span>
+      </div>
+
+      <!-- result -->
+      <div class="result-area" id="resultArea">
+        <div class="result-toolbar">
+          <div class="result-meta">
+            <strong id="resultTitle">ページタイトル</strong>
+            <span style="margin:0 6px;color:#d1d5db;">|</span>
+            <span id="resultChars">0文字</span>
+          </div>
+          <div class="btn-row">
+            <button class="btn-secondary" onclick="copyMarkdown()">コピー</button>
+            <button class="btn-dl" onclick="downloadMarkdown()">↓ DLする</button>
+          </div>
         </div>
-        <div class="btn-row">
-          <button class="btn-secondary" onclick="copyMarkdown()">コピー</button>
-          <button class="btn-dl" onclick="downloadMarkdown()">↓ DLする</button>
+        <pre class="markdown-preview" id="markdownOutput"></pre>
+      </div>
+    </div>
+
+    <div
+      style="margin-top:32px;display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:12px;text-align:left;max-width:640px;margin-left:auto;margin-right:auto;">
+      <div style="background:var(--gray-100);border-radius:var(--radius);padding:16px;">
+        <p style="font-size:11px;font-weight:700;color:var(--gray-400);margin-bottom:8px;letter-spacing:0.08em;">
+          変換前（HTML）</p>
+        <code
+          style="font-size:11px;color:var(--gray-600);font-family:var(--mono);line-height:1.7;display:block;">&lt;nav&gt;...&lt;/nav&gt;<br>&lt;script&gt;...&lt;/script&gt;<br>&lt;div class="wrap"&gt;<br>&nbsp;&nbsp;&lt;h1&gt;タイトル&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;本文...&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;footer&gt;...&lt;/footer&gt;</code>
+      </div>
+      <div style="font-size:22px;color:var(--blue);padding-top:40px;">→</div>
+      <div style="background:var(--blue-light);border-radius:var(--radius);padding:16px;">
+        <p style="font-size:11px;font-weight:700;color:var(--blue);margin-bottom:8px;letter-spacing:0.08em;">
+          変換後（Markdown）</p>
+        <code
+          style="font-size:11px;color:var(--gray-700);font-family:var(--mono);line-height:1.7;display:block;"># タイトル<br><br>本文のテキストがここに入ります。<br>ナビ・広告・スクリプトは<br>自動で除去されます。</code>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- HOW TO -->
+  <section id="how" style="padding: 0 0 64px;">
+    <div class="content-wrap">
+      <p class="section-title">使い方</p>
+      <p class="section-subtitle">3ステップで完了。エンジニア知識は不要です。</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>URLを入れる</h3>
+          <p>変換したいページのURLをそのままペーストするだけ。</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>変換する</h3>
+          <p>ボタンを押すと自動でコンテンツ部分を抽出してMarkdownに変換します。</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>コピー or DL</h3>
+          <p>そのままコピーしてChatGPTなどに貼り付けるか、.mdファイルとして保存できます。</p>
         </div>
       </div>
-      <pre class="markdown-preview" id="markdownOutput"></pre>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- HOW TO -->
-<section id="how" style="padding: 0 0 64px;">
+  <!-- IMPLEMENTATION -->
+  <section id="impl" style="padding: 0 0 64px;">
+    <div class="content-wrap">
+      <p class="section-title">llms.txt への活用</p>
+      <p class="section-subtitle">生成したMarkdownをAIエージェント向けに公開する場合の配置方法。</p>
+      <div class="impl-section">
+        <div class="impl-header">
+          <h2>llms.txt ファイルの設置方法</h2>
+          <p>サイトのルートに配置することで、AIクローラーがより正確にコンテンツを把握できます。</p>
+        </div>
+        <div class="impl-body">
+          <div class="impl-step">
+            <div class="impl-step-num">1</div>
+            <div class="impl-step-content">
+              <h3>Markdownを生成・編集する</h3>
+              <p>上のツールでページのMarkdownを生成し、不要な部分（ナビゲーション・フッター等）を削除します。</p>
+            </div>
+          </div>
+          <div class="impl-step">
+            <div class="impl-step-num">2</div>
+            <div class="impl-step-content">
+              <h3>llms.txt として保存する</h3>
+              <p>「DLする」から .md ファイルをダウンロードし、ファイル名を <strong>llms.txt</strong> に変更します。</p>
+            </div>
+          </div>
+          <div class="impl-step">
+            <div class="impl-step-num">3</div>
+            <div class="impl-step-content">
+              <h3>サーバーのルートに配置する</h3>
+              <p>WordPressであれば <code>/public_html/</code> 直下。以下のURLでアクセスできる状態にします。</p>
+              <code>https://yourdomain.com/llms.txt</code>
+            </div>
+          </div>
+          <div class="impl-step">
+            <div class="impl-step-num">4</div>
+            <div class="impl-step-content">
+              <h3>checker で確認する</h3>
+              <p>AI観測ラボの <a href="https://checker.ai-kansoku.com" style="color:var(--blue);">llms.txt チェッカー</a>
+                で正しく配置できているか確認しましょう。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding: 0 0 64px;">
+    <div class="content-wrap">
+      <p class="section-title">よくある質問</p>
+      <p class="section-subtitle"></p>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Wix・STUDIOのサイトは使えませんか？</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            Wix・STUDIO・Webflow等のSPA（シングルページアプリケーション）はJavaScriptでコンテンツを描画するため、このツールでは取得できません。WordPress・はてなブログ・Ameba等の静的HTMLを返すサイトに対応しています。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>変換した内容は保存されますか？</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            URLの取得はサーバー側のCORSプロキシを経由しますが、変換処理はすべてブラウザ上で完結します。変換結果はサーバーに保存されません。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>なぜMarkdownに変換するとAIの精度が上がるの？</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            HTMLはスタイルシートやスクリプト等の「AIに不要な情報」が大量に含まれています。Markdownに変換することでコンテンツ本体だけを抽出でき、AIがトークンを節約しながら内容を正確に把握できるようになります。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>無料で使えますか？</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            完全無料です。アカウント登録も不要で、ページを開いてすぐ使えます。
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>ログインが必要なページは変換できますか？</span>
+            <svg class="chevron" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            認証が必要なページ（会員専用ページ、管理画面等）は変換できません。公開されているURLのみ対応しています。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <div class="content-wrap">
-    <p class="section-title">使い方</p>
-    <p class="section-subtitle">3ステップで完了。エンジニア知識は不要です。</p>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>URLを入れる</h3>
-        <p>変換したいページのURLをそのままペーストするだけ。</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>変換する</h3>
-        <p>ボタンを押すと自動でコンテンツ部分を抽出してMarkdownに変換します。</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>コピー or DL</h3>
-        <p>そのままコピーしてChatGPTなどに貼り付けるか、.mdファイルとして保存できます。</p>
-      </div>
+    <div class="cta-section">
+      <h2>AIに読まれているサイトになっているか、診断しましたか？</h2>
+      <p>llms.txt・robots.txt・OGPタグを一括チェック。AI観測ラボで無料診断できます。</p>
+      <a href="https://ai-kansoku.com" class="btn-cta-white">無料で診断する →</a>
     </div>
   </div>
-</section>
 
-<!-- IMPLEMENTATION -->
-<section id="impl" style="padding: 0 0 64px;">
-  <div class="content-wrap">
-    <p class="section-title">llms.txt への活用</p>
-    <p class="section-subtitle">生成したMarkdownをAIエージェント向けに公開する場合の配置方法。</p>
-    <div class="impl-section">
-      <div class="impl-header">
-        <h2>llms.txt ファイルの設置方法</h2>
-        <p>サイトのルートに配置することで、AIクローラーがより正確にコンテンツを把握できます。</p>
-      </div>
-      <div class="impl-body">
-        <div class="impl-step">
-          <div class="impl-step-num">1</div>
-          <div class="impl-step-content">
-            <h3>Markdownを生成・編集する</h3>
-            <p>上のツールでページのMarkdownを生成し、不要な部分（ナビゲーション・フッター等）を削除します。</p>
-          </div>
-        </div>
-        <div class="impl-step">
-          <div class="impl-step-num">2</div>
-          <div class="impl-step-content">
-            <h3>llms.txt として保存する</h3>
-            <p>「DLする」から .md ファイルをダウンロードし、ファイル名を <strong>llms.txt</strong> に変更します。</p>
-          </div>
-        </div>
-        <div class="impl-step">
-          <div class="impl-step-num">3</div>
-          <div class="impl-step-content">
-            <h3>サーバーのルートに配置する</h3>
-            <p>WordPressであれば <code>/public_html/</code> 直下。以下のURLでアクセスできる状態にします。</p>
-            <code>https://yourdomain.com/llms.txt</code>
-          </div>
-        </div>
-        <div class="impl-step">
-          <div class="impl-step-num">4</div>
-          <div class="impl-step-content">
-            <h3>checker で確認する</h3>
-            <p>AI観測ラボの <a href="https://checker.ai-kansoku.com" style="color:var(--blue);">llms.txt チェッカー</a> で正しく配置できているか確認しましょう。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p style="margin-bottom:8px;">
+      <a href="https://ai-kansoku.com">AI観測ラボ</a>
+      <span style="margin: 0 10px; opacity: 0.4;">|</span>
+      <a href="https://checker.ai-kansoku.com">チェッカー</a>
+      <span style="margin: 0 10px; opacity: 0.4;">|</span>
+      <a href="https://image.ai-kansoku.com">画像変換</a>
+    </p>
+    <p>© 2025 AI観測ラボ. All rights reserved.</p>
+  </footer>
 
-<!-- FAQ -->
-<section id="faq" style="padding: 0 0 64px;">
-  <div class="content-wrap">
-    <p class="section-title">よくある質問</p>
-    <p class="section-subtitle"></p>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>Wix・STUDIOのサイトは使えませんか？</span>
-          <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
-        </button>
-        <div class="faq-a">
-          Wix・STUDIO・Webflow等のSPA（シングルページアプリケーション）はJavaScriptでコンテンツを描画するため、このツールでは取得できません。WordPress・はてなブログ・Ameba等の静的HTMLを返すサイトに対応しています。
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>変換した内容は保存されますか？</span>
-          <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
-        </button>
-        <div class="faq-a">
-          URLの取得はサーバー側のCORSプロキシを経由しますが、変換処理はすべてブラウザ上で完結します。変換結果はサーバーに保存されません。
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>なぜMarkdownに変換するとAIの精度が上がるの？</span>
-          <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
-        </button>
-        <div class="faq-a">
-          HTMLはスタイルシートやスクリプト等の「AIに不要な情報」が大量に含まれています。Markdownに変換することでコンテンツ本体だけを抽出でき、AIがトークンを節約しながら内容を正確に把握できるようになります。
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>無料で使えますか？</span>
-          <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
-        </button>
-        <div class="faq-a">
-          完全無料です。アカウント登録も不要で、ページを開いてすぐ使えます。
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          <span>ログインが必要なページは変換できますか？</span>
-          <svg class="chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
-        </button>
-        <div class="faq-a">
-          認証が必要なページ（会員専用ページ、管理画面等）は変換できません。公開されているURLのみ対応しています。
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- TOAST -->
+  <div class="copy-toast" id="copyToast">コピーしました</div>
 
-<!-- CTA -->
-<div class="content-wrap">
-  <div class="cta-section">
-    <h2>AIに読まれているサイトになっているか、診断しましたか？</h2>
-    <p>llms.txt・robots.txt・OGPタグを一括チェック。AI観測ラボで無料診断できます。</p>
-    <a href="https://ai-kansoku.com" class="btn-cta-white">無料で診断する →</a>
-  </div>
-</div>
+  <script>
+    let currentMarkdown = '';
+    let currentTitle = 'page';
 
-<!-- FOOTER -->
-<footer>
-  <p style="margin-bottom:8px;">
-    <a href="https://ai-kansoku.com">AI観測ラボ</a>
-    <span style="margin: 0 10px; opacity: 0.4;">|</span>
-    <a href="https://checker.ai-kansoku.com">チェッカー</a>
-    <span style="margin: 0 10px; opacity: 0.4;">|</span>
-    <a href="https://image.ai-kansoku.com">画像変換</a>
-  </p>
-  <p>© 2025 AI観測ラボ. All rights reserved.</p>
-</footer>
+    async function handleConvert() {
+      const url = document.getElementById('urlInput').value.trim();
+      if (!url) return;
 
-<!-- TOAST -->
-<div class="copy-toast" id="copyToast">コピーしました</div>
-
-<script>
-  let currentMarkdown = '';
-  let currentTitle = 'page';
-
-  async function handleConvert() {
-    const url = document.getElementById('urlInput').value.trim();
-    if (!url) return;
-
-    // validate
-    try { new URL(url); } catch {
-      showError('有効なURLを入力してください（例：https://example.com）');
-      return;
-    }
-
-    setLoading(true);
-    hideResult();
-    hideError();
-
-    try {
-      const proxyUrl = `/api/fetch?url=${encodeURIComponent(url)}`;
-      const res = await fetch(proxyUrl);
-
-      if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error(body.error || `ページの取得に失敗しました（HTTP ${res.status}）`);
+      // validate
+      try { new URL(url); } catch {
+        showError('有効なURLを入力してください（例：https://example.com）');
+        return;
       }
 
-      const html = await res.text();
-      const { markdown, title } = convertToMarkdown(html, url);
+      setLoading(true);
+      hideResult();
+      hideError();
 
-      currentMarkdown = markdown;
-      currentTitle = title;
+      try {
+        const proxyUrl = `/api/fetch?url=${encodeURIComponent(url)}`;
+        const res = await fetch(proxyUrl);
 
-      document.getElementById('resultTitle').textContent = title;
-      document.getElementById('resultChars').textContent = markdown.length.toLocaleString() + '文字';
-      document.getElementById('markdownOutput').textContent = markdown;
-      showResult();
-    } catch (e) {
-      showError(e.message);
-    } finally {
-      setLoading(false);
+        if (!res.ok) {
+          const body = await res.json().catch(() => ({}));
+          throw new Error(body.error || `ページの取得に失敗しました（HTTP ${res.status}）`);
+        }
+
+        const html = await res.text();
+        const { markdown, title } = convertToMarkdown(html, url);
+
+        currentMarkdown = markdown;
+        currentTitle = title;
+
+        document.getElementById('resultTitle').textContent = title;
+        document.getElementById('resultChars').textContent = markdown.length.toLocaleString() + '文字';
+        document.getElementById('markdownOutput').textContent = markdown;
+        showResult();
+      } catch (e) {
+        showError(e.message);
+      } finally {
+        setLoading(false);
+      }
     }
-  }
 
-  function convertToMarkdown(html, url) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const title = doc.title || new URL(url).hostname;
+    function convertToMarkdown(html, url) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const title = doc.title || new URL(url).hostname;
 
-    // Readability
-    const reader = new Readability(doc, { keepClasses: false });
-    const article = reader.parse();
+      // Readability
+      const reader = new Readability(doc, { keepClasses: false });
+      const article = reader.parse();
 
-    let content = article ? article.content : doc.body.innerHTML;
+      let content = article ? article.content : doc.body.innerHTML;
 
-    // Turndown
-    const td = new TurndownService({
-      headingStyle: 'atx',
-      bulletListMarker: '-',
-      codeBlockStyle: 'fenced',
+      // Turndown
+      const td = new TurndownService({
+        headingStyle: 'atx',
+        bulletListMarker: '-',
+        codeBlockStyle: 'fenced',
+      });
+      td.remove(['script', 'style', 'nav', 'footer', 'iframe', 'noscript']);
+
+      let md = td.turndown(content);
+
+      // Prepend frontmatter
+      function smartTrim(text, max = 300) {
+        const cut = text.slice(0, max);
+        const lastPunctuation = Math.max(
+          cut.lastIndexOf('。'),
+          cut.lastIndexOf('.')
+        );
+        return lastPunctuation > 50 ? cut.slice(0, lastPunctuation + 1) : cut;
+      }
+
+      const rawText = article ? article.textContent : doc.body.textContent;
+      const cleaned = rawText.replace(/\s+/g, ' ').trim();
+      const context = smartTrim(cleaned).replace(/\n/g, ' ');
+
+      const frontmatter = `---
+title: "${title}"
+source: ${url}
+fetched: ${new Date().toISOString().slice(0, 10)}
+context: |
+  ${context}
+---
+
+`;
+      return { markdown: frontmatter + md, title };
+    }
+
+    function setLoading(on) {
+      document.getElementById('statusLoading').classList.toggle('visible', on);
+      document.getElementById('convertBtn').disabled = on;
+      document.getElementById('convertBtn').textContent = on ? '変換中…' : '変換する';
+    }
+    function showResult() { document.getElementById('resultArea').classList.add('visible'); }
+    function hideResult() { document.getElementById('resultArea').classList.remove('visible'); }
+    function showError(msg) {
+      const el = document.getElementById('statusError');
+      document.getElementById('errorMsg').textContent = msg;
+      el.classList.add('visible');
+    }
+    function hideError() { document.getElementById('statusError').classList.remove('visible'); }
+
+    async function copyMarkdown() {
+      try {
+        await navigator.clipboard.writeText(currentMarkdown);
+        const toast = document.getElementById('copyToast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2000);
+      } catch {
+        alert('コピーに失敗しました。手動でテキストを選択してコピーしてください。');
+      }
+    }
+
+    function downloadMarkdown() {
+      const slug = currentTitle.replace(/[^a-zA-Z0-9\u3040-\u9FFF]/g, '-').slice(0, 40);
+      const filename = `${slug}.md`;
+      const blob = new Blob([currentMarkdown], { type: 'text/markdown;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    }
+
+    // Enter key
+    document.getElementById('urlInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') handleConvert();
     });
-    td.remove(['script', 'style', 'nav', 'footer', 'iframe', 'noscript']);
-
-    let md = td.turndown(content);
-
-    // Prepend frontmatter
-    const frontmatter = `---\ntitle: "${title}"\nsource: ${url}\nfetched: ${new Date().toISOString().slice(0,10)}\n---\n\n`;
-    return { markdown: frontmatter + md, title };
-  }
-
-  function setLoading(on) {
-    document.getElementById('statusLoading').classList.toggle('visible', on);
-    document.getElementById('convertBtn').disabled = on;
-    document.getElementById('convertBtn').textContent = on ? '変換中…' : '変換する';
-  }
-  function showResult() { document.getElementById('resultArea').classList.add('visible'); }
-  function hideResult() { document.getElementById('resultArea').classList.remove('visible'); }
-  function showError(msg) {
-    const el = document.getElementById('statusError');
-    document.getElementById('errorMsg').textContent = msg;
-    el.classList.add('visible');
-  }
-  function hideError() { document.getElementById('statusError').classList.remove('visible'); }
-
-  async function copyMarkdown() {
-    try {
-      await navigator.clipboard.writeText(currentMarkdown);
-      const toast = document.getElementById('copyToast');
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 2000);
-    } catch {
-      alert('コピーに失敗しました。手動でテキストを選択してコピーしてください。');
-    }
-  }
-
-  function downloadMarkdown() {
-    const slug = currentTitle.replace(/[^a-zA-Z0-9\u3040-\u9FFF]/g, '-').slice(0, 40);
-    const filename = `${slug}.md`;
-    const blob = new Blob([currentMarkdown], { type: 'text/markdown;charset=utf-8' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = filename;
-    a.click();
-    URL.revokeObjectURL(a.href);
-  }
-
-  function toggleFaq(btn) {
-    const item = btn.closest('.faq-item');
-    item.classList.toggle('open');
-  }
-
-  // Enter key
-  document.getElementById('urlInput').addEventListener('keydown', e => {
-    if (e.key === 'Enter') handleConvert();
-  });
-</script>
+  </script>
 </body>
+
 </html>
